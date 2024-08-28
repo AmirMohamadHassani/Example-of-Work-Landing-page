@@ -1,12 +1,14 @@
 import React from "react";
+import "/home/avanger766/Documents/pagekasuka/kasuka_page/src/header/headerpage.css"
+
 
 export default function Hed() {
   return (
     <div className="headers">
       <h1>
         <a>
-          <img src="/home/avanger766/Documents/pagekasuka/kasuka_page/public/image/logo.png" alt="logo" />
-          kasuka
+           <img src="kasuka_page/public/image/logo.png" alt=""/>
+           kasuka
         </a>
       </h1>
       <nav>
