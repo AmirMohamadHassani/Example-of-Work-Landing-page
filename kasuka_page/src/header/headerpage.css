@@ -1,23 +1,59 @@
-img{
-    width:3rem ;
-    height: 3rem;
+img {
+  width: fit-content;
+  height: fit-content;
 }
-.headers{
-    width: 500px;
-    float: right;
-    justify-content: center;
-    display: flex;
-    flex-direction: row-reverse;
+li::marker {
+  content: none;
 }
-.senter{
-    float: right;
-justify-self:start;
+li {
+  font-size: larger;
+  font-weight: bolder;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.headers {
+  width: 100rem;
+  float: right;
+  justify-content: space-between;
+  margin-right: 4rem;
+  display: flex;
+  align-items: baseline;
+  flex-direction: row-reverse;
+}
+.senter {
+  float: right;
+  justify-self: start;
+}
+.first {
+  justify-self: center;
+}
+ul {
+  display: flex;
+  gap: 4rem;
+}
+.link {
+  color: black;
+  font-size: xx-large;
+  text-align: center;
+  text-decoration: none;
+  border: solid 0.4rem;
+  border-radius: 0.4rem;
+}
+.link-menu{
+  color: inherit;
+  text-decoration: none;
 
 }
-.first{
-justify-self: center;
-}
-ul{
-    display: flex;
-    gap: 4rem;
+.link-menu:hover{
+  color: aqua;
+  font-size: 30px;
+  padding: 1rem;
+  border-radius: 2rem;
+  box-shadow: inset -10px -10px 20px 0px #5B51D8,
+   inset 0 -10px 20px 0px #833AB4,
+    inset 10px -10px 20px 0px #E1306C,
+    inset  10px 0 20px 0px #FD1D1D,
+     inset  10px 10px 20px 0px #F77737,
+      inset  0 10px 20px 0px #FCAF45,
+       inset  -10px 10px 20px 0px #FFDC80;
 }
