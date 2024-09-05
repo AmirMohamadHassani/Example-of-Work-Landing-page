@@ -1,0 +1,32 @@
+#main{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background: url(kasuka_page/public/image/hero-bg.jpg);
+    position: relative;
+
+}
+*, ::after ::before {
+    box-sizing: border-box;
+}
+#main::before{
+content:none;
+background:black;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+position: absolute;
+}
+d-flex{
+    display: flex !important;
+}
+.align-item-senter{
+   
+    align-items: center !important;
+}
+
+.justify-content{
+    justify-content: center !important;
+}

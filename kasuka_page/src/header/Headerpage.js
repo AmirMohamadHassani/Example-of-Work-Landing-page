@@ -1,31 +1,32 @@
 import React from "react";
 import "/home/avanger766/Documents/pagekasuka/kasuka_page/src/header/headerpage.css";
 
-export default function Hed() {
+export default function Hed({li1 ,li2 ,li3 ,li4 ,li5 ,logosrc}) {
   return (
-    <div className="headers">
+    <>
+    <header className="headers">
       <h1>
         <a>
-          <img src="kasuka_page/src/header/logo.png" alt="logo" /> kasuka
+          <img src={logosrc} alt="logo" /> kasuka
         </a>
       </h1>
       <nav>
         <ul>
           <li>
-            <a className="link-menu" href="">خانه</a>
+            <a className="link-menu" href="">{li1}</a>
           </li>
           <li>
-            <a className="link-menu" href="">درباره ما</a>
+            <a className="link-menu" href="">{li2}</a>
           </li>
 
           <li>
-            <a className="link-menu" href="">خدمات</a>
+            <a className="link-menu" href="">{li3}</a>
           </li>
           <li>
-            <a  className="link-menu"href="">نمونه کارها</a>
+            <a  className="link-menu"href="">{li4}</a>
           </li>
           <li>
-            <a className="link-menu" href="">لیست کشویی</a>
+            <a className="link-menu" href="">{li5}</a>
           </li>
           <li>
             <a className="link-menu" href="">تماس با ما</a>
@@ -33,8 +34,9 @@ export default function Hed() {
         </ul>
       </nav>
       <a className="link" href="">
-        شروع
+      شروع
       </a>
-    </div>
+    </header>
+    </>
   );
 }

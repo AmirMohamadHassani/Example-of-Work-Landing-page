@@ -1,6 +1,7 @@
 img {
-  width: fit-content;
-  height: fit-content;
+  width: 5rem;
+  height:4rem;
+  object-fit: cover;
 }
 li::marker {
   content: none;
@@ -16,7 +17,8 @@ li {
   float: right;
   justify-content: space-between;
   margin-right: 4rem;
-  display: flex;
+  position: fixed;
+  display: flex;background-color: inherit;
   align-items: baseline;
   flex-direction: row-reverse;
 }
@@ -44,16 +46,19 @@ ul {
   text-decoration: none;
 
 }
+
 .link-menu:hover{
-  color: aqua;
+  color: rgb(255, 255, 0);
   font-size: 30px;
-  padding: 1rem;
+  padding: 1rem;    
   border-radius: 2rem;
-  box-shadow: inset -10px -10px 20px 0px #5B51D8,
-   inset 0 -10px 20px 0px #833AB4,
-    inset 10px -10px 20px 0px #E1306C,
-    inset  10px 0 20px 0px #FD1D1D,
-     inset  10px 10px 20px 0px #F77737,
-      inset  0 10px 20px 0px #FCAF45,
-       inset  -10px 10px 20px 0px #FFDC80;
+}
+.link{
+  color: white;
+  padding: 0.4rem 1rem;
+  border-color:yellow ;
+}
+.link:hover{
+  color : black;
+  border-color: yellow;
 }
