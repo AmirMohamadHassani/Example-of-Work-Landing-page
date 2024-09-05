@@ -1,32 +1,53 @@
-#main{
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
+*,
+::after ::before {
+  box-sizing: border-box;
+}
+h1,h2,h3,h4,h5{
+  font-size: xx-large;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#main {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background: url(../../../public/image/hero-bg.jpg);
+  backdrop-filter:;
+  position: inherit;
+}
+@media (min-width: 1024px) {
+  #main {
     background-attachment: fixed;
-    background: url(kasuka_page/public/image/hero-bg.jpg);
-    position: relative;
-
+  }
 }
-*, ::after ::before {
-    box-sizing: border-box;
-}
-#main::before{
-content:none;
-background:black;
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
-position: absolute;
-}
-d-flex{
-    display: flex !important;
-}
-.align-item-senter{
-   
-    align-items: center !important;
+#main::before {
+  content: none;
+  background: black;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
 }
 
-.justify-content{
-    justify-content: center !important;
+d-flex {
+  display: flex !important;
+}
+.align-item-senter {
+  align-items: center !important;
+}
+
+.justify-content {
+  justify-content: center !important;
+}
+
+.container {
+  text-align: center;
+  padding: 20rem 41rem;
+  color: white;
+}
+.span{
+    color: #ffc451;
+    font-weight: bolder;
+    font-weight: 700;
+    font-size: xxx-large;
 }
