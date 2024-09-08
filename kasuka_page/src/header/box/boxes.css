@@ -1,0 +1,8 @@
+.box{
+    display:flex;
+    gap: 1rem;
+    margin: 2rem 2rem;
+    width: 16.6666666667%;
+    height: fit-content;
+    background: blueviolet;
+}

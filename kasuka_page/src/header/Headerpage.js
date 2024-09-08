@@ -51,6 +51,7 @@ export default function Hed({ li1, li2, li3, li4, li5, logosrc }) {
           شروع
         </a>
       </header>
+      
     </>
   );
 }
