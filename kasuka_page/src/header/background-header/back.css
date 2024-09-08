@@ -50,3 +50,11 @@ d-flex {
     font-weight: 700;
     font-size: xxx-large;
 }
+
+.flex{
+  top: 80%;
+  left: 20%;
+  display: flex;
+  position: relative;
+  width: fit-content;
+}

@@ -1,8 +1,12 @@
 .box{
     display:flex;
     gap: 1rem;
+    text-align: center;
     margin: 2rem 2rem;
-    width: 16.6666666667%;
+    width: fit-content;
+    font-size: x-large;
     height: fit-content;
-    background: blueviolet;
+    background: rgba(0, 0, 0, 0);
+    border: 1rem yellow ;
+    border-radius: 1.4rem;
 }
