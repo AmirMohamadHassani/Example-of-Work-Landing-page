@@ -1,12 +1,27 @@
-.box{
-    display:flex;
-    gap: 1rem;
+.box {
+  display: flex;
+  padding: 1rem;
+  text-align: center;
+  margin: 2rem 2rem;
+  width: 10rem;
+  height: 8rem;
+  border: 1px solid rgb(117, 117, 117);
+  justify-content: center;
+  transition: ease-in-out 0.3s;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.box:hover {
+  border-color: yellow;
+}
+.logo {
+  width: 3rem;
+  height: fit-content;
+}
+.p{
+  color: white;
+  font-size: 18;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    margin: 2rem 2rem;
-    width: fit-content;
-    font-size: x-large;
-    height: fit-content;
-    background: rgba(0, 0, 0, 0);
-    border: 1rem yellow ;
-    border-radius: 1.4rem;
 }

@@ -5,10 +5,10 @@ export default function Boxes({ name, logo }) {
     <>
       <div>
         <div className="box">
-          <i style={{ content: `"\{logo}"`}}></i>
-          <p>{name}</p>
+        <img src={logo}alt="logo" className="logo"/>
+       <p className="p">{name}</p>
         </div>
       </div>
     </>
-  );
+  );  
 }

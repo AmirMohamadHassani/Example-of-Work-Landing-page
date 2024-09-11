@@ -8,7 +8,7 @@ export default function Hed({ li1, li2, li3, li4, li5, logosrc }) {
         <h1>
           <a className="logo">
             kasuka
-            <img src={logosrc} alt="logo" />
+            <img src={logosrc} alt="logoes" className="logOfPage" />
           
           </a>
         </h1>

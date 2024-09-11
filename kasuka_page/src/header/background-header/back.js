@@ -4,25 +4,45 @@ import "../background-header/back.css";
 export default function Background() {
   return (
     <>
-      <section
-        id="main"
-        className="justify-content d-flex  align-item-senter">
-
+      <section id="main" className="justify-content d-flex  align-item-senter">
         <>
+          <section className="flex">
+            <Boxes
+              name="متن نمایشی"
+              logo="
+          data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA4ElEQVR4nO2WTQrCMBCF36obL+HeG/gDXVq8RC8jHsOj9BRdCybeoPvIwARGMU1iEiyYB7PIzOt8mdCWAFU/1AmABmAyhQLQhYBVRqiNewjYmrcA9jPr2PDKGglymFkXA5vMsUxwL4yDyK89TWSNvFaDyPcu6AbAJIytY0M+sAS0Ij8x40UrAKNjWtI1AkxeOKYemeVsLKcl3SLA5IVjavO+MeX52IvVOy5S8vjhwdL1P5UJ/dPk7mcqOFH1qJf3cj3EVSdVO+6lQ8yXApeAcwi4YbidPCU0Q5vks6vCl3oCDaMTr1I9x9EAAAAASUVORK5CYII
+        "
+            />
+            <Boxes
+              name="نمودارکیفی"
+              logo="
+          data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAABpUlEQVR4nO2VvUoDQRSFt/CnWX+S0iaW+gKinT6ARhCsBSHY7BoLFS2c2VhoZ+1TCJmrESwstbBRUEgEtVax0dhkbo7MmJAsUQLuKiIOHLjc3T3fzM7MvY7zY8NDt+tV0q6vM5HkVdKOQFeLeSKrLwZWdHlY8GsUDSzrcjKrz0MQQzXmQlURUDtxWSq+qsUPUvGdjRXfSuLHjXwVBtKzWJlqAHy9MCz0S3vzKiTxzvYR+gJiloT5II8xkxcKIzlCxsRDkp+N55cAAXE5UHxpYYrvzcxr4Buzok8BqXW+lsS7cSi1xsUWgOtzIa4D6fpc+H0ASXzWtNFnsQMCs5l5TFopvq3nxQF6twgJsYf+yAChMG5UBwSEieYTliPMxQoQeUyHjrBCti0gR5iVxE81PYoDjMYKkISl8MVC+h/g/K1fFChkmz8SCrauv1dNPrZq3IN0qJQrLH4MeG+VRUegQxQwKAmrNS2LQySt2T5m6nkT2xUcImneqec3CSkng07X06VQwzHtzfX0qX3g81EUuZ4uub4+ae3LAl2GGrXp25m3mH/jeAO8oK/6zymtuAAAAABJRU5ErkJggg==
+        "
+            />
+            <Boxes
+              name="نمونه کار ها"
+              logo="
+          data:image/png;base64,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
+        "
+            />
+            <Boxes
+              name="عملکرد های پایانی"
+              logo="
+          data:image/png;base64,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      
+        "
+            />
+            <Boxes
+              name="اطلاعات ذخیره شده "
+              logo="
+              data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAACH0lEQVR4nLXVT4jNURQH8A+NDCap2QjFYqZkRpSVLCzZyJ6NJaVsmB0LTYMmsbHzZ2LEzoI0kvUYNENoMkoUM700Cj0mf+bpTudNv3nee36e8a373q9zzz3fc8495x7qYzkO4AZeo4gveBOy/VihASzCMXxECS9xGb04iSt4EXufQ7c5r/Em3I/D17G5ju4mXMM0hrEuD8ECnMOuvB5hJyYjdb+RtOMwBvABWzWGjiAZzqRrcfoZj3R8j/8zGseOSNdRHMercgQdcVmJ4GnmQAu6cA8FTMUqhKwrdBL2hnwybCW9C2VDB8N4+cJmQsMT/MQQLkYV9cb3UOyNhO5q3A07pajAlWWC2xjDEmzLRFAKIw9wKUPQh4exl3Sy2B2Opf6ZRbqHq1VyWsIg7oTO11jjIRusQlC1LNMFn6pB0FPnbE8Ngi04myX4hu4aBCU8Qj9Ox+oPWXm/GvFU2J7BO5yfxxT1xds1i1t4No8pGsPNrOBQKG6oUBzJkaLUuVl0hnxOFbVG6Km+s2jBkajviUyKJkKW9pZVnEnV+ClszsGJqOvt/v2p6K62mTwZjXZPz8ffojPOPq43G9pDqVAnkubo1oUVnr/HW7T9yZO2mFbTcSfrK4wPRCrXYGNMuqT7PO/ASVganV3Ej+jMpjBeCk9H47sYOc89MrNoxb4gXBtkyWhKYarzVN4NDf1aSG9+IkmzIEX0X7AnnpZVebR/AdzQsDAdD/gtAAAAAElFTkSuQmCC        "
+            />
+          </section>
 
-        <section className="flex">
-        <Boxes name="متن نمایشی" logo="f1a9"/>
-        <Boxes name="نمودارکیفی" logo="ea98"/>
-        <Boxes name="نمونه کار ها" logo="eb29"/>
-        <Boxes name="عملکرد های پایانی" logo="efc1"/>
-        <Boxes name="اطلاعات ذخیره شده " logo="ec16" />
-      </section>
-
-        <div className="container">
-          <h1>راه حل های قدرتمند دیجیتال با </h1>
-          <span className="span">kasuka</span>
-          <h2>ما تیمی از بازاریابان با استعداد دیجیتال هستیم </h2>
-        </div>
+          <div className="container">
+            <h1>راه حل های قدرتمند دیجیتال با </h1>
+            <span className="span">kasuka</span>
+            <h2>ما تیمی از بازاریابان با استعداد دیجیتال هستیم </h2>
+          </div>
         </>
       </section>
     </>

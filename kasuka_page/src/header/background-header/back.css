@@ -41,9 +41,10 @@ d-flex {
 
 .container {
   text-align: center;
-  padding: 20rem 41rem;
+  padding: 15rem 41rem;
   color: white;
 }
+
 .span{
     color: #ffc451;
     font-weight: bolder;
