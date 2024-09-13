@@ -41,7 +41,7 @@ d-flex {
 
 .container {
   text-align: center;
-  padding: 15rem 41rem;
+  padding: 12rem 41rem;
   color: white;
 }
 
@@ -53,8 +53,8 @@ d-flex {
 }
 
 .flex{
-  top: 80%;
-  left: 20%;
+  top: 75%;
+  left: 10%;
   display: flex;
   position: relative;
   width: fit-content;

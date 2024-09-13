@@ -1,7 +1,7 @@
 import React from "react";
 import "/home/avanger766/Documents/pagekasuka/kasuka_page/src/header/headerpage.css";
 
-export default function Hed({ li1, li2, li3, li4, li5, logosrc }) {
+export default function Hed({ li1, li2, li3, li4, li5 , li6, logosrc }) {
   return (
     <>
       <header className="headers">
@@ -42,7 +42,7 @@ export default function Hed({ li1, li2, li3, li4, li5, logosrc }) {
             </li>
             <li>
               <a className="link-menu" href="">
-                تماس با ما
+                  {li6}
               </a>
             </li>
           </ul>
