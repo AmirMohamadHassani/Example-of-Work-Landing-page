@@ -1,0 +1,26 @@
+html body p {
+    direction: rtl;
+}
+.image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 2em;
+    gap: 2rem;
+    box-sizing: border-box;
+    position: relative; /* Added position relative */
+    z-index: 1; /* Added z-index */
+}
+
+.flex {
+    display: grid;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2em;
+    position: relative; /* Added position relative */
+    z-index: 2; /* Added z-index higher than image */
+}
+p-font{
+    font-size: medium;
+    direction: rtl;
+
+}   

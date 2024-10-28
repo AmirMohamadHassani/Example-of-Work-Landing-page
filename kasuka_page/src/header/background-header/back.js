@@ -6,7 +6,7 @@ export default function Background() {
     <>
       <section id="main" className="justify-content d-flex  align-item-senter">
         <>
-          <section className="flex">
+          <section className="flex zoomIn">
             <Boxes
               name="متن نمایشی"
               logo="
@@ -38,7 +38,7 @@ export default function Background() {
             />
           </section>
 
-          <div className="container">
+          <div className="container fadeInUp">
             <h1>راه حل های قدرتمند دیجیتال با </h1>
             <span className="span">kasuka</span>
             <h2>ما تیمی از بازاریابان با استعداد دیجیتال هستیم </h2>

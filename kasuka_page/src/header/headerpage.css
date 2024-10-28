@@ -19,6 +19,7 @@ li {
   justify-content: space-between;
   margin-right: 4rem;
   position: fixed;
+  z-index: 3;
   display: flex;
   background-color: inherit;
   align-items: center;
@@ -42,7 +43,7 @@ ul {
   text-align: center;
   text-decoration: none;
   transition: ease-in-out 0.5s;
-  border: solid 0.4rem;
+  border: solid 0.2rem;
   border-radius: 0.4rem;
 }
 .link-menu{
@@ -53,6 +54,7 @@ ul {
 }
 .logo{
   line-height: 3;
+  color: wheat;
   text-align: center;
 }
 .link-menu:hover{
@@ -64,7 +66,7 @@ ul {
 .link{
   color: white;
   margin-left: 5%;
-  padding: 0.4rem 1rem;
+  padding: 0.2rem 1rem;
   border-color:yellow ;
 }
 .link:hover{

@@ -1,7 +1,27 @@
-import React from "react";
+import React ,{useEffect} from "react";
 import "/home/avanger766/Documents/pagekasuka/kasuka_page/src/header/headerpage.css";
 
 export default function Hed({ li1, li2, li3, li4, li5 , li6, logosrc }) {
+  useEffect(() => {
+    const changeHeaderBg = () => {
+      const header = document.querySelector('.headers');
+      if (window.scrollY > 0) {
+        header.style.backgroundColor = '#0C0C0C'; // رنگ جدید هدر بعد از اسکرول
+        header.style.boxShadow = '0 2px 15px rgba(0,0,0,0.1)';
+      } else {
+        header.style.backgroundColor = 'transparent'; // رنگ اولیه هدر
+        header.style.boxShadow = 'none';
+      }
+    };
+
+    window.addEventListener('scroll', changeHeaderBg);
+    
+    // پاکسازی event listener
+    return () => {
+      window.removeEventListener('scroll', changeHeaderBg);
+    };
+  }, []);
+
   return (
     <>
       <header className="headers">
@@ -48,7 +68,7 @@ export default function Hed({ li1, li2, li3, li4, li5 , li6, logosrc }) {
           </ul>
         </nav>
         <a className="link" href="">
-          شروع
+          شروع  
         </a>
       </header>
       
